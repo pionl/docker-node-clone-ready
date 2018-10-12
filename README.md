@@ -8,7 +8,7 @@
 
 - pionl/node-clone-ready:8
 - pionl/node-clone-ready:9
-- pionl/node-clone-ready:lastest (node 9)
+- pionl/node-clone-ready:latest (node 9)
 
 ```docker
 FROM pionl/node-clone-ready:8
