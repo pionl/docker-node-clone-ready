@@ -1,4 +1,4 @@
-FROM node:--TAG--
+FROM node:12
 
 MAINTAINER Martin Kluska <martin@kluska.cz>
 

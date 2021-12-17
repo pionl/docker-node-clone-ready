@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:14
 
 MAINTAINER Martin Kluska <martin@kluska.cz>
 
@@ -8,4 +8,4 @@ MAINTAINER Martin Kluska <martin@kluska.cz>
 RUN apt-get update && \
     apt-get install -y \
         git \
-        openssh-server
+        openssh-server && rm -rf /var/lib/apt/lists/*

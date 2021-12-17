@@ -1,4 +1,4 @@
-# Docker image based on official node image with openssh and git installed
+# --DESCRIPTION--
 
 ## Pre-installed packages:
 
@@ -6,9 +6,7 @@
 
 ## Tags:
 
-- pionl/node-clone-ready:8
-- pionl/node-clone-ready:9
-- pionl/node-clone-ready:latest (node 9)
+--TAGS--
 
 ```docker
 FROM pionl/node-clone-ready:8
@@ -46,9 +44,13 @@ Pass desired id_rsa file when building image:
 docker build -t TAG_NAME --build-arg ssh_prv_key="$(cat ~/.ssh/id_rsa)"
 ```
 
-## Contribution
+## Contributions
 
-1. Change the `Dockerfile.template`
-2. Edit `build.sh` if new version is added
-3. Run `build.sh` to build images
-4. Run `build.sh deploy` to build and push images
+1. Install [wf-docker](https://github.com/wrk-flow/wf-docker)
+2. Change the `Dockerfile.template`
+3. For new versions edit `.wf-docker.json` and `wf-docker.tags` property
+4. Use `wf-docker build` to build image
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

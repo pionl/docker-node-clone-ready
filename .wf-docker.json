@@ -1,0 +1,16 @@
+{
+  "description": "Docker image based on official node image with openssh and git installed",
+  "image": "pionl/node-clone-ready",
+  "tags": [
+    "8",
+    "9",
+    "12",
+    "14",
+    "16",
+    "17"
+  ],
+  "run": [
+    "node --version",
+    "npm --version"
+  ]
+}
